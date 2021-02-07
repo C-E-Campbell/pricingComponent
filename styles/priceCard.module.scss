@@ -1,0 +1,55 @@
+.card_body {
+  background-color: red;
+  margin: 0 auto;
+}
+
+.billing_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  background-color: teal;
+}
+
+.billing_slider {
+  background-color: #a5f3eb;
+  width: 90%;
+  height: 8px;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+
+.billing_cycle {
+  display: flex;
+  align-items: center;
+}
+
+.billing_cycle_selector {
+  width: 16%;
+  height: 22px;
+  border-radius: 50px;
+  background-color: hsl(223, 50%, 87%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 2px 4px;
+}
+
+.billing_cycle_selector_toggle {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.signup_section {
+  background-color: green;
+}
+
+.signup_btn {
+  background-color: hsl(227, 35%, 25%);
+  border: none;
+  padding: 8px 25px;
+  border-radius: 50px;
+  color: hsl(225, 20%, 60%);
+}
