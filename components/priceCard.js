@@ -10,11 +10,11 @@ export default function priceCard() {
   const changePrice = (e) => {
     const val = e.target.valueAsNumber;
     const packages = [
-      { views: '10K', price: 8.0 },
-      { views: '50K', price: 12.0 },
-      { views: '100K', price: 16.0 },
-      { views: '500K', price: 24.0 },
-      { views: '1M', price: 36.0 },
+      { views: '10K', price: 8 },
+      { views: '50K', price: 12 },
+      { views: '100K', price: 16 },
+      { views: '500K', price: 24 },
+      { views: '1M', price: 36 },
     ];
     if (val <= 20) {
       setBundle(packages[0]);
@@ -58,7 +58,10 @@ export default function priceCard() {
           onChange={(e) => changePrice(e)}
         />
 
-        <p>{`${bundle.price}/month`}</p>
+        <p className={styles.billing_slider_price}>
+          <span>{`${bundle.price}.00`}</span>
+          /month
+        </p>
         <div className={styles.billing_cycle}>
           <p>Monthly Billing</p>
           <div
