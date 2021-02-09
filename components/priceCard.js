@@ -21,16 +21,21 @@ export default function priceCard() {
       { views: '500K', price: 24, discount: 18 },
       { views: '1M', price: 36, discount: 27 },
     ];
-    setSliderVal(val);
+
     if (val <= 20) {
+      setSliderVal(0);
       setBundle(packages[0]);
     } else if (val <= 40) {
+      setSliderVal(25);
       setBundle(packages[1]);
     } else if (val <= 60) {
+      setSliderVal(50);
       setBundle(packages[2]);
     } else if (val <= 80) {
+      setSliderVal(75);
       setBundle(packages[3]);
     } else {
+      setSliderVal(100);
       setBundle(packages[4]);
     }
   };
@@ -61,10 +66,9 @@ export default function priceCard() {
           <input
             className={styles.billing_slider}
             type="range"
-            min="0"
+            min="20"
             max="100"
             id="myRange"
-            value={sliderVal}
             step="20"
             onChange={(e) => changePrice(e)}
           />
