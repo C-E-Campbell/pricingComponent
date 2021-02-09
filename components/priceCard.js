@@ -59,7 +59,7 @@ export default function priceCard() {
         />
 
         <p className={styles.billing_slider_price}>
-          <span>{`${bundle.price}.00`}</span>
+          <span>{` $${bundle.price}.00`}</span>
           /month
         </p>
         <div className={styles.billing_cycle}>
@@ -102,20 +102,26 @@ export default function priceCard() {
       <section className={styles.signup_section}>
         <div>
           <div>
-            <div>
-              <CheckIcon style={{ color: '#fff' }} />
-              <h3>Unlimted websites</h3>
+            <div className={styles.signup_detail}>
+              <CheckIcon
+                style={{ color: 'hsl(174, 86%, 45%)', fontSize: '15px' }}
+              />
+              <h3>Unlimited websites</h3>
             </div>
-            <div>
-              <CheckIcon style={{ color: '#fff' }} />
+            <div className={styles.signup_detail}>
+              <CheckIcon
+                style={{ color: 'hsl(174, 86%, 45%)', fontSize: '15px' }}
+              />
               <h3>100% data ownership</h3>
             </div>
-            <div>
-              <CheckIcon style={{ color: '#fff' }} />
+            <div className={styles.signup_detail}>
+              <CheckIcon
+                style={{ color: 'hsl(174, 86%, 45%)', fontSize: '15px' }}
+              />
               <h3>Email reports</h3>
             </div>
           </div>
-          <div>
+          <div className={styles.trial_btn_box}>
             <button className={styles.signup_btn}>Start my trial</button>
           </div>
         </div>
