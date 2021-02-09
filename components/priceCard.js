@@ -5,16 +5,20 @@ export default function priceCard() {
   const [price, setPrice] = useState(16);
   const [cycle, setCycle] = useState('monthly');
   const [toggleState, setToggleState] = useState(false);
-  const [bundle, setBundle] = useState({ views: '100K', price: 16.0 });
+  const [bundle, setBundle] = useState({
+    views: '100K',
+    price: 16.0,
+    discount: 12,
+  });
 
   const changePrice = (e) => {
     const val = e.target.valueAsNumber;
     const packages = [
-      { views: '10K', price: 8 },
-      { views: '50K', price: 12 },
-      { views: '100K', price: 16 },
-      { views: '500K', price: 24 },
-      { views: '1M', price: 36 },
+      { views: '10K', price: 8, discount: 6 },
+      { views: '50K', price: 12, discount: 9 },
+      { views: '100K', price: 16, discount: 12 },
+      { views: '500K', price: 24, discount: 18 },
+      { views: '1M', price: 36, discount: 27 },
     ];
     if (val <= 20) {
       setBundle(packages[0]);
@@ -59,7 +63,11 @@ export default function priceCard() {
         />
 
         <p className={styles.billing_slider_price}>
-          <span>{` $${bundle.price}.00`}</span>
+          {cycle === 'monthly' ? (
+            <span>{` $${bundle.price}.00`}</span>
+          ) : (
+            <span>{` $${bundle.discount}.00`}</span>
+          )}
           /month
         </p>
         <div className={styles.billing_cycle}>
