@@ -13,8 +13,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px auto;
+  margin: 0px auto 2px;
   background-color: rgb(255, 255, 255);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 .billing_section_heading {
   font-family: manrope;
@@ -112,6 +114,8 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .signup_detail {
