@@ -3,7 +3,6 @@
 .card_body {
   margin: 0 auto;
   box-shadow: 0px 5px 15px rgb(224, 224, 224);
-
   width: 85%;
   position: relative;
   top: -200px;
@@ -18,6 +17,8 @@
 }
 
 .billing_section {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   width: 100%;
   padding: 1rem 0.5rem;
   display: flex;
@@ -25,8 +26,6 @@
   align-items: center;
   margin: 0px auto 4px;
   background-color: rgb(255, 255, 255);
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
 }
 .billing_section_heading {
   font-family: manrope;
