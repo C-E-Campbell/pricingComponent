@@ -5,6 +5,7 @@ export default function priceCard() {
   const [price, setPrice] = useState(16);
   const [cycle, setCycle] = useState('monthly');
   const [toggleState, setToggleState] = useState(false);
+  const [sliderVal, setSliderVal] = useState(50);
   const [bundle, setBundle] = useState({
     views: '100K',
     price: 16.0,
@@ -20,6 +21,7 @@ export default function priceCard() {
       { views: '500K', price: 24, discount: 18 },
       { views: '1M', price: 36, discount: 27 },
     ];
+    setSliderVal(val);
     if (val <= 20) {
       setBundle(packages[0]);
     } else if (val <= 40) {
@@ -51,16 +53,22 @@ export default function priceCard() {
         <h3 className={styles.billing_section_heading}>
           {bundle.views} PAGEVIEWS
         </h3>
-
-        <input
-          className={styles.billing_slider}
-          type="range"
-          min="20"
-          max="100"
-          id="myRange"
-          step="20"
-          onChange={(e) => changePrice(e)}
-        />
+        <div className={styles.test}>
+          <div
+            style={{ width: sliderVal + '%' }}
+            className={styles.test1}
+          ></div>
+          <input
+            className={styles.billing_slider}
+            type="range"
+            min="0"
+            max="100"
+            id="myRange"
+            value={sliderVal}
+            step="20"
+            onChange={(e) => changePrice(e)}
+          />
+        </div>
 
         <p className={styles.billing_slider_price}>
           {cycle === 'monthly' ? (
