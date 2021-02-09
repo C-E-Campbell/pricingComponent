@@ -99,6 +99,7 @@ export default function priceCard() {
           </div>
         </div>
       </section>
+      <hr className={styles.hr} />
       <section className={styles.signup_section}>
         <div>
           <div>

@@ -3,17 +3,26 @@
 .card_body {
   margin: 0 auto;
   box-shadow: 0px 5px 15px rgb(224, 224, 224);
-  padding: 1rem;
-  width: 90%;
+
+  width: 85%;
+  position: relative;
+  top: -200px;
+  background-color: #fff;
+}
+
+.hr {
+  width: 100%;
+  color: hsl(223, 50%, 87%);
+  background-color: hsl(223, 50%, 87%);
 }
 
 .billing_section {
-  width: 95%;
-  padding: 1rem 0;
+  width: 100%;
+  padding: 1rem 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0px auto 2px;
+  margin: 0px auto 4px;
   background-color: rgb(255, 255, 255);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -24,6 +33,7 @@
   font-weight: 800;
   font-size: 15px;
   letter-spacing: 1px;
+  margin-bottom: 2rem;
 }
 
 .billing_slider {
@@ -106,9 +116,9 @@
 }
 
 .signup_section {
-  padding: 1rem;
+  padding: 1rem 0.5rem;
   margin: 3px auto;
-  width: 95%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
