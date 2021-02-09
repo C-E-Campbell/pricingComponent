@@ -5,6 +5,7 @@
   flex-direction: column;
   margin: 4rem auto;
   width: 95%;
+  position: relative;
 
   h1,
   h2 {
@@ -22,4 +23,8 @@
     color: hsl(225, 20%, 60%);
     margin-bottom: 3px;
   }
+}
+
+.heading_img {
+  position: absolute;
 }
