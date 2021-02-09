@@ -123,7 +123,7 @@ export default function priceCard() {
           </div>
           <div className={styles.trial_btn_box}>
             <button
-              onClick={() => alert('www.charlescampbell.dev')}
+              onClick={() => alert('visit www.charlescampbell.dev  🌮')}
               className={styles.signup_btn}
             >
               Start my trial
