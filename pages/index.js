@@ -11,11 +11,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <div>
-        <Image
+        <img
+          className={styles.svg}
           src="/bg-pattern.svg"
           alt="Picture of the author"
-          width={500}
-          height={500}
         />
         <section className={styles.heading_container}>
           <div className={styles.heading_img}>
