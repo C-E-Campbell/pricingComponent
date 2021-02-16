@@ -210,3 +210,58 @@
     }
   }
 }
+
+@media (min-width: 500px) {
+  .card_body {
+    max-width: 80%;
+  }
+
+  .signup_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+  }
+
+  .billing_cycle {
+    width: 65%;
+  }
+}
+
+@media (min-width: 750px) {
+  .card_body {
+    max-width: 80%;
+  }
+
+  .signup_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+  }
+
+  .billing_cycle {
+    width: 65%;
+  }
+}
+
+@media (min-width: 900px) {
+  .card_body {
+    max-width: 80%;
+  }
+
+  .signup_info {
+    width: 50%;
+  }
+
+  .billing_cycle {
+    width: 50%;
+  }
+}
+@media (min-width: 1088px) {
+  .card_body {
+    max-width: 55%;
+  }
+}

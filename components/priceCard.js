@@ -121,7 +121,7 @@ export default function priceCard() {
       </section>
       <hr className={styles.hr} />
       <section className={styles.signup_section}>
-        <div>
+        <div className={styles.signup_info}>
           <div>
             <div className={styles.signup_detail}>
               <CheckIcon
