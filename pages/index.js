@@ -10,7 +10,7 @@ export default function Home() {
         <title>React Pricing Component</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div>
+      <div className={styles.topContainer}>
         <img
           className={styles.svg}
           src="/bg-pattern.svg"
