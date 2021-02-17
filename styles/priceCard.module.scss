@@ -259,6 +259,14 @@
   .billing_cycle {
     width: 50%;
   }
+
+  .billing_cycle_selector {
+    width: 10%;
+  }
+
+  .billing_cycle_selector_discount {
+    width: 10%;
+  }
 }
 @media (min-width: 1088px) {
   .card_body {
